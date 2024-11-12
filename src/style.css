@@ -11,3 +11,7 @@
     width: fit-content;
     border: 2px solid grey;
 }
+
+table, tr, th , td{
+    border: 2px solid grey;
+}
