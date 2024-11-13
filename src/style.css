@@ -15,3 +15,31 @@
 table, tr, th , td{
     border: 2px solid grey;
 }
+
+.cardCtn {
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 1000px;
+    /* grid-template-columns: repeat(3, 100px, 100px); */
+    overflow:auto;
+    background-color: red;
+}
+
+.categoryCSS {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height:fit-content;
+    background-color: yellowgreen;
+}
+
+.card {
+    width: 200px; height: 200px;
+    border: 2px solid black;
+}
+
+.flipCss {
+    border: 10px solid grey;
+}

@@ -10,7 +10,7 @@
 
 <body>
   <div id="app"></div>
-  <script type="module" src="/src/table.ts"></script>
+  <script type="module" src="/src/phoneDirectoryANDFlipCard.ts"></script>
   <!-- <button style="border-radius: 20px; width: 100px;">like</button>
 
   <div style="display: flex;">
@@ -22,7 +22,7 @@
 
   </div> -->
 
-  <div id="starRating" class="starCnt">
+  <!-- <div id="starRating" class="starCnt">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="80px"
       height="80px" viewBox="0 0 256 256" xml:space="preserve">
       <defs>
@@ -103,8 +103,30 @@
   <label for="input4
   ">Age : </label>
   <input id="input4" type="text"> </input>
+</div> -->
+<div>PHONE DIRECTORY</div>
+<!-- You have a markup for a form to add a contact [Name, Phone num, email], a search field input and a table of current contacts. Implement form submit feature with validation,
+ [re]render a table, filter by phone number. Vanilla JS/CSS/HTML -->
+<form>
+  <label>Name</label>
+  <input type="text" id="input1"></input>
+  <label>Phone</label>
+  <input  type="text" id="input2"></input>
+  <label >num</label>
+  <input type="text" id="input3"></input>
+  <label>email</label>
+  <input type="text" id="input4"></input>
+  <input type="submit" id="submitId"></input>
+  <div id="errorId"></div>
+</form>
+<div id="tableId"></div>
+FILTER: <input id="searchId"></input>
+
+<br/>
+<br/>
+<br/>
+<div id="cardContainer" class="cardCtn">
+  <p>FLIP CARD GOES HERE</p>
+  <button id="loadid">LOAD MORE</button>
 </div>
-
-</body>
-
 </html>
