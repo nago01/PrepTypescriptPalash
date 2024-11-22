@@ -10,7 +10,7 @@
 
 <body>
   <div id="app"></div>
-  <script type="module" src="/src/clockTimer.ts">
+  <script type="module" src="/src/pagination.ts">
 
   </script>
   <!-- <button style="border-radius: 20px; width: 100px;">like</button>
@@ -153,5 +153,11 @@ FILTER: <input id="searchId"></input>
     <!-- document.querySelectorAll('button') won't select the below button as on html it input -->
     <input type="button" value="start" id="startId"></input>
   </div>
-
+  <div> 
+    Pagination Component:
+  <div style="display: grid; width: 500px; background-color: red; grid-template-columns: repeat(3, 1fr); height: max-content;" id="gridId">
+  </div>
+  <div id="pagesId"></div>
+</div>
+  
 </html>
