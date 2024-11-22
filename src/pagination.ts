@@ -7,9 +7,10 @@ function Pagination() {
   async function fetchData() {
     try {
       let data1 = await fetch(`https://dummyjson.com/products?limit=${currLimit}&skip=${currSkip}`);
+      if(data1.ok){
       data = await data1.json();
-
-      if (data) {
+      }
+      if (Object.keys(data).length) {
         data = data.products;
         console.log(data, 'data');
         showProduct(data);
