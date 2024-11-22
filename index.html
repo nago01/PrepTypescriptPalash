@@ -10,7 +10,9 @@
 
 <body>
   <div id="app"></div>
-  <script type="module" src="/src/phoneDirectoryANDFlipCard.ts"></script>
+  <script type="module" src="/src/clockTimer.ts">
+
+  </script>
   <!-- <button style="border-radius: 20px; width: 100px;">like</button>
 
   <div style="display: flex;">
@@ -104,10 +106,10 @@
   ">Age : </label>
   <input id="input4" type="text"> </input>
 </div> -->
-<div>PHONE DIRECTORY</div>
-<!-- You have a markup for a form to add a contact [Name, Phone num, email], a search field input and a table of current contacts. Implement form submit feature with validation,
+  <!-- <div>PHONE DIRECTORY</div> -->
+  <!-- You have a markup for a form to add a contact [Name, Phone num, email], a search field input and a table of current contacts. Implement form submit feature with validation,
  [re]render a table, filter by phone number. Vanilla JS/CSS/HTML -->
-<form>
+  <!-- <form>
   <label>Name</label>
   <input type="text" id="input1"></input>
   <label>Phone</label>
@@ -128,5 +130,28 @@ FILTER: <input id="searchId"></input>
 <div id="cardContainer" class="cardCtn">
   <p>FLIP CARD GOES HERE</p>
   <button id="loadid">LOAD MORE</button>
-</div>
+</div> -->
+  <div>
+    TIMER WITH HOUR, MIN and SEC
+    <div style="display: flex; flex-direction: row; width: 300px; justify-content: space-between;">
+
+      <div>
+        Hours:
+        <text id="hourval"></text>
+      </div>
+      <div>
+        Min:
+        <text id="minval"></text>
+      </div>
+      <div>
+        Sec:
+        <text id="secval"></text>
+      </div>
+
+    </div>
+    <button>Reset</button>
+    <!-- document.querySelectorAll('button') won't select the below button as on html it input -->
+    <input type="button" value="start" id="startId"></input>
+  </div>
+
 </html>
