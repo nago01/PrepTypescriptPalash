@@ -6,10 +6,19 @@ function Pagination() {
   let currSkip = 0;
   async function fetchData() {
     try {
+      let stTime = new Date;
+      console.log(stTime.getMilliseconds(),'before fetch');
       let data1 = await fetch(`https://dummyjson.com/products?limit=${currLimit}&skip=${currSkip}`);
+      console.log(data1,'data1');
       if(data1.ok){
       data = await data1.json();
       }
+      setTimeout(()=>{
+        let time = new Date;
+        console.log(time.getMilliseconds(),'inside the setTimeout');
+      },1000);
+      let edTime = new Date;
+      console.log(edTime.getMilliseconds(),'called the fetch');
       if (Object.keys(data).length) {
         data = data.products;
         console.log(data, 'data');
